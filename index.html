@@ -1,61 +1,825 @@
-<html>
-	<head>
-		<title>
-		Assignment of web tech
-		</title>
-	</head>
-	<body>
-	
-	<style>
-	body{
-	background-image: url('https://i.pinimg.com/originals/fc/d0/91/fcd0919a125e21d9f775c2ba70a024ba.jpg');
-	background-repeat: no-repeat;
-	background size: 50% 50%;
-	}
-	</style>
-	<header>
-	   <h1 style="color: blue">
-	   Assignment
-	  </h1>
-	  <br/>
-	  <br/>
-	   <br/>
-	  <br/>
-		 <br/>
-	  <br/><br/>
-	  <main>
-		
-			<h1 style="color: green";>
-			<p style="text-align:center;">
-			<big>WEB TECHNOLOGY </big>
-			(<small>CACSC04</small>)
-			</p>
-			</h1>
-			<a href="https://www.google.com" target="_blank">
-			<h2>
-			Click here to go to Google 
-			</h2>
-			
-		
-		</main>
-		<footer>
-		<br/>
-	  <br/>
-	   <br/>
-	  <br/>
-		 <br/>
-	  <br/><br/>
-	  <br/>
-		<p style="text-align:center;">
-			<h5 style="color: Black">
-			
-			Name- Rishabh Jain
-			Roll No.- 2019UCS2029
-		
-		</h5>
-		</p>
-		</footer>
-	</body>
-	</html>
-	
-	
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaurav Jain - AI Engineer Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .column {
+      display: flex;
+      align-items: center;
+    }
+
+    .profilepic {
+      width: 150px;
+      /* Adjust the width to your preference */
+      height: 150px;
+      /* Adjust the height to your preference */
+      border-radius: 50%;
+    }
+
+    .text-column {
+      margin-left: 40px;
+      /* Add margin to separate the columns */
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    p {
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      text-align: justify
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #848484;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    .project {
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-details {
+      display: none;
+      padding: 10px;
+      border: 1px solid #ddd;
+      background-color: #f9f9f9;
+      margin-top: 10px;
+    }
+
+    .project-toggle {
+      color: #007BFF;
+      text-decoration: none;
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .view-more {
+      color: #007BFF;
+      text-decoration: none;
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+
+    .work-entry {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      /* margin-bottom: 10px; */
+    }
+
+    .date {
+      text-align: right;
+      flex-grow: 1;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: #007BFF;
+    }
+
+    li {
+      margin-bottom: 10px;
+
+    }
+
+    /* Add this CSS to your existing styles */
+    .skill-chips {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .skill-chip {
+      background-color: #205186;
+      color: #fff;
+      border-radius: 8px;
+      padding: 5px 15px;
+      margin: 5px;
+      margin-top: 8px;
+      font-size: 0.9rem;
+    }
+
+    /* Add this CSS to your existing styles */
+    #back-to-top {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1;
+      background-color: #545454;
+      color: #ffffff;
+      border: none;
+      border-radius: 10%;
+      padding: 8px;
+      cursor: pointer;
+    }
+
+    #back-to-top:hover {
+      background-color: #0056b3;
+    }
+
+
+    footer {
+      text-align: center;
+      padding: 10px 0;
+      background-color: #333;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="column">
+      <img src="https://avatars.githubusercontent.com/u/69904683?s=400&u=2c36675de88c6bf72955141b3cdb4ca0d8a755db" alt="Rishabh's Picture" class="profilepic">
+    </div>
+    <div class="text-column">
+      <h1>Rishabh Jain</h1>
+      <br>
+      <p>I am a highly skilled Java developer with a passion for problem-solving and algorithm design. 
+        With extensive experience in solving LeetCode and other competitive programming problems, 
+        I have sharpened my coding skills and ability to think logically and creatively. 
+        </p>
+    </div>
+  </header>
+
+
+  <nav>
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#competetive">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certifications">Certifications & Awards</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="https://drive.google.com/file/d/1roWI3-jXPiCSoRQEcbXgrVyN64ewivJv/view?usp=sharing"
+          target="_blank">Download
+          Resume</a></li>
+    </ul>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="project">
+      <p>I am a highly skilled Java developer with a passion for problem-solving and algorithm design. 
+        With extensive experience in solving LeetCode and other competitive programming problems, 
+        I have sharpened my coding skills and ability to think logically and creatively. 
+
+    
+    </div>
+  </section>
+
+
+  <!-- Work History Section -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="project">
+
+      <div class="work-entry">
+        <h3>Software Engineer</h3>
+        <p class="date">July 2023 - Current</p>
+      </div>
+
+      <div class="work-entry" style="margin-top: -28px;">
+        <h4>UKG (Ultimate Kronos Group)</h4>
+      </div>
+      <p>UKG (Ultimate Kronos Group), specializing in innovative human capital management (HCM) and workforce management solutions.</p>
+      <ul>
+        <li>
+          <p>
+            Played a key role as the first full-time employee in scaling the business to over 2Mn ARR and growing the
+            ML team to 10.
+          </p>
+        </li>
+        <li>
+          <p>Leading machine learning team & building computer vision solutions based on object detection,
+            classification, statistics
+            leading algorithms, segmentation and object recognition.
+          </p>
+        </li>
+
+      </ul>
+
+    </div>
+
+
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="project">
+
+      <div class="work-entry">
+        <h3>B. Tech — Computer Science & Artificial Intelligence</h3>
+        <p class="date">Aug. 2019 – May 2023</p>
+      </div>
+
+      <div class="work-entry" style="margin-top: -28px;">
+        <h4>Netaji Subhas Institute of Technology (NSIT), Delhi</h4>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Competetive Section -->
+  <section id="competetive">
+    <h2>Competetive Programming</h2>
+    <div class="project">
+
+      <div class="work-entry">
+        <h3>LeetCode</h3>
+      </div>
+
+      <div class="work-entry" style="margin-top: -28px;">
+        <h4>Netaji Subhas Institute of Technology (NSIT), Delhi</h4>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <!-- List your AI and machine learning projects with descriptions, links, and any other relevant information. -->
+    <div class="project">
+      <h3>Developed a High-Resolution Face Detection Algorithm (>99% accuracy)</h3>
+
+      <div class="project-details">
+        <p>
+
+          <strong>Problem Statement:</strong><br>
+          The project involves the development of a face detection machine learning algorithm on high resolution images
+          that achieved an impressive accuracy rate of over 99%. High-resolution images contain a substantial amount of
+          detail, and very tiny face, making it more challenging for a face detection algorithm to accurately identify
+          faces amidst the abundance of visual information.<br><br>
+
+          <strong>Solution:</strong><br>
+          To address the challenges of developing a high-resolution face detection algorithm in tensorflow, I undertook
+          a
+          comprehensive approach.<br>
+
+          Dataset Preparation:
+          To prepare the dataset for training, I prepared few python scripts. I first divided each high-resolution image
+          into 16 parts, ensuring overlapping sections to cover every possible face. I then applied an open-source face
+          detection model to these image segments. This process resulted in a well-annotated and diverse dataset,
+          crucial
+          for training a robust model.<br>
+
+          Model Architecture: Afterward, I crafted the model architecture from scratch and embarked on training the
+          model
+          using the dataset. This custom architecture allowed for fine-tuning the algorithm to perform optimally on
+          high-resolution images with tiny faces, a challenging task in itself.<br>
+
+          Inferencing Optimization: I also optimized the inferencing process by dividing the input image into 4 parts,
+          ensuring efficient and accurate detection of faces during application usage.<br>
+
+          The combination of these steps resulted in an exceptional high-resolution face detection algorithm, which not
+          only achieved an accuracy rate of over 99% but also significantly improved the overall speed and accuracy of
+          face detection in real-world scenarios.<br><br>
+
+
+          <strong>Impact:</strong><br>
+          This project led to a rapid growth in the company, as we received significantly fewer complaints about face
+          detection. Furthermore, people began recommending the product to others due to the enhanced accuracy and
+          reliability of the face detection algorithm.<br>
+        </p>
+      </div>
+      <a class="project-toggle" href="#">View Details</a>
+
+
+      <div class="skill-chips" style="margin-top: 18px;">
+        <span class="skill-chip">Computer Vision</span>
+        <span class="skill-chip">Object Detection</span>
+        <span class="skill-chip">Tensorflow</span>
+        <span class="skill-chip">Onnx</span>
+        <span class="skill-chip">AWS Sagemaker</span>
+      </div>
+
+    </div>
+
+    <div class="project">
+      <h3>Faster yet accurate kiss classification</h3>
+
+      <div class="project-details">
+        <p><strong>Problem Statement:</strong><br>
+          Task aimed to classify images into three categories: 'kiss,' 'almost kiss,' and 'no kiss.' The primary
+          challenge
+          faced was the high resolution of the images, with an average resolution of around 6k pixels. This high
+          resolution made it challenging for machine learning models to achieve accurate results, particularly as the
+          kiss
+          event typically occurred in a very small region of the entire image. The initial model had an accuracy of only
+          24%, which was lower than what a random model could provide (33% in this case).<br><br>
+
+          <strong>Solution:</strong><br>
+          To address these challenges, I adopted a multi-step approach. Firstly, I leveraged a face detection model's
+          predictions to identify the region of interest within the image. Next, I implemented a smart cropping
+          algorithm
+          to extract and prepare the input for my machine learning model. Subsequently, I trained a Convolutional Neural
+          Network (CNN) on these cropped images.
+
+          One additional challenge I encountered was the class imbalance in the dataset. I had a limited number of kiss
+          images (15k) compared to a much larger number of images for the 'almost kiss' and 'no kiss' classes
+          (approximately 100k each). To mitigate this imbalance, I employed weighted loss functions and down-sampled the
+          dataset.<br><br>
+
+
+          <strong>Impact:</strong> <br>Approach yielded significant improvements. The model's accuracy increased to
+          approximately 80%,
+          representing a substantial enhancement over the initial 24% accuracy. Additionally, the preprocessing step
+          significantly improved inference speed. As a result, the overall speed of the application increased by 10%,
+          leading to heightened customer satisfaction.<br>
+        </p>
+      </div>
+      <a class="project-toggle" href="#">View Details</a>
+
+      <div class="skill-chips" style="margin-top: 18px;">
+        <span class="skill-chip">Computer Vision</span>
+        <span class="skill-chip">Image Classification</span>
+        <span class="skill-chip">Tensorflow</span>
+        <span class="skill-chip">Feature Engineering</span>
+        <span class="skill-chip">AWS Sagemaker</span>
+      </div>
+
+    </div>
+
+    <div class="project">
+      <h3>Image Composition Assessment with YOLO</h3>
+
+      <div class="project-details">
+        <p><strong>Problem Statement:</strong><br>
+          The project's primary goal was to assess the composition quality of an image, specifically in terms of
+          adhering
+          to the rule of thirds and accurately identifying the subject's position within the image.<br><br>
+
+          <strong>Solution:</strong><br>
+          To address this challenge, I employed the YOLO machine learning model to detect and locate the subjects within
+          the images. YOLO is known for its real-time object detection capabilities, making it suitable for identifying
+          the subjects swiftly and accurately.
+
+          Subsequently, I developed an algorithm that assigned a composition score to each image based on two key
+          factors:
+          the subject's position within the image and adherence to the rule of thirds. This algorithm considered the
+          subject's placement in relation to the rule of thirds grid and evaluated how well the image composition
+          aligned
+          with this fundamental principle of visual design.<br><br>
+
+
+          <strong>Impact:</strong><br>
+          The implemented solution demonstrated remarkable performance in assessing image composition. By efficiently
+          detecting subjects and evaluating composition quality, it provided valuable insights for selecting the best
+          images<br>
+        </p>
+        <!-- <p><a href="#">View Project</a></p> -->
+      </div>
+      <a class="project-toggle" href="#">View Details</a>
+
+      <div class="skill-chips" style="margin-top: 18px;">
+        <span class="skill-chip">Image Processing</span>
+        <span class="skill-chip">Object Detection</span>
+      </div>
+
+    </div>
+
+    <div class="project">
+      <h3>Correct White Balance Prediction in Image</h3>
+
+      <div class="project-details">
+        <p><strong>Problem Statement:</strong><br>
+          The project's primary challenge was to correct the white balance of an image by accurately predicting the
+          appropriate temperature and tint values for editing in Adobe Lightroom. Adobe Lightroom offers a wide range of
+          white balance temperature options, from 2000K to 50,000K Kelvin, allowing photographers to adjust them based
+          on
+          their preferences. Predicting the correct values within this extensive range can be a daunting task.<br><br>
+
+          <strong>Solution:</strong><br>
+          To address this challenge, I conducted a detailed analysis of the impact of temperature values on images.
+          Through this analysis, I observed that changes in temperature values beyond 9,000K and below 2,400K had
+          minimal
+          impact on the image. Therefore, I focused on developing a regression-based machine learning model within this
+          temperature range.
+
+          The model's objective was to predict the ideal temperature and tint values for white balance correction,
+          simplifying the editing process in Adobe Lightroom. In this case, I employed transfer learning and designed a
+          CNN architecture that not only takes images but also the current Temp and Tint values into account. I then
+          trained the model using the prepared dataset.<br><br>
+
+
+          <strong>Impact:</strong><br>
+          The implementation of this machine learning solution had a significant impact on image editing efficiency. By
+          predicting temperature and tint values within a practical range, it streamlined the white balance correction
+          process for photographers, saving them time and improving the overall quality of image editing.<br>
+        </p>
+        <!-- <p><a href="#">View Project</a></p> -->
+      </div>
+      <a class="project-toggle" href="#">View Details</a>
+
+      <div class="skill-chips" style="margin-top: 18px;">
+        <span class="skill-chip">Computer Vision</span>
+        <span class="skill-chip">Regression</span>
+        <span class="skill-chip">Tensorflow</span>
+        <span class="skill-chip">Onnx</span>
+      </div>
+
+    </div>
+
+    <div class="project">
+      <h3>Amazon ML Challenge 2021 - Product Categorization</h3>
+      <div class="project-details">
+        <p><strong>Problem Statement:</strong><br>
+          The challenge was to categorize products into 10,000 different categories based on their product title and the
+          description. The dataset posed a significant challenge due to its vast size, comprising 3 million data
+          points.<br><br>
+
+          <strong>Solution:</strong><br>
+          Given the immense dataset, my approach began with a thorough data analysis and data cleaning to gain a
+          comprehensive understanding. I identified the primary challenge as data imbalance, with over ~95% of the data
+          points belonging to approximately 2,700 categories, leaving the remaining 5% distributed across roughly 7,300
+          categories.<br>
+
+          To address this challenge, I used a two-fold solution. First, I trained a machine learning model using
+          Tensorflow/Keras on the 95% of the dataset that belonged to the 2,700 classes. I experimented with various
+          Natural Language Processing (NLP) models, starting with simple techniques like Bag of Words, TF-IDF, and
+          Word2Vec, leveraging the Python's NLTK library for data preparation. For the remaining 5% of the dataset,
+          encompassing approximately 7,300 classes, I implemented a straightforward random model that provided random
+          predictions for these categories.<br>
+
+          Attached graph shows the cumulative distribution of the target classes.<br><br>
+
+
+          <strong>Impact:</strong><br>
+          While I was unable to submit my solution within the deadline, my approach demonstrated remarkable results.
+          Even
+          with the simplicity of using clever data preparation and a basic Bag of Words model, the accuracy achieved was
+          on par with the best solutions at the time that utilized advanced models like BERT. This project underscored
+          my
+          ability to handle complex, large-scale datasets and devise effective strategies to tackle data imbalance
+          issues,
+          leading to competitive results in a challenging machine learning competition.<br><br>
+        </p>
+        <p><a href="https://github.com/G0rav/Amazon_ML_Challenge_2021" target="_blank">View Project</a></p>
+      </div>
+      <a class="project-toggle" href="#">View Details</a>
+
+      <div class="skill-chips" style="margin-top: 18px;">
+        <span class="skill-chip">Natural Language Processing (NLP)</span>
+        <span class="skill-chip">Tensorflow</span>
+        <span class="skill-chip">NLTK</span>
+        <span class="skill-chip">Feature Engineering</span>
+        <span class="skill-chip">Statistics</span>
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>Deployed a Machine Learning Model for Ticket Build Time Prediction</h3>
+
+      <div class="project-details">
+        <p><strong>Problem Statement:</strong><br>
+          The problem statement was to create a machine learning model meant to predict ticket build times accurately.
+          The
+          objective was to enhance developer efficiency by providing a more precise estimate of the time required to
+          build
+          the software after submitting a commit.<br><br>
+
+          <strong>Solution:</strong><br>
+          To achieve this, the initial challenge was to create a dataset because there wasn't a readily available one. I
+          talked to developers from different departments to figure out if the number of files affected build time and
+          which changes took more or less time. Afterward, I conducted data analysis and feature engineering using
+          Python
+          libraries like pandas and matplotlib to prepare the necessary features. I trained several regression machine
+          learning models and found that the decision tree performed the best. The great thing about it was that it not
+          only predicted the build time but also provided information about the importance of each feature.<br><br>
+
+
+          <strong>Impact:</strong><br>
+          The deployment of the machine learning model delivered significant benefits. Developers now had access to
+          precise predictions for ticket build times, leading to increased efficiency and better project management.
+          This
+          project showcased my ability to leverage machine learning to optimize processes and enhance productivity
+          within
+          the development team, ultimately contributing to more effective software development practices.<br>
+        </p>
+        <!-- <p><a href="#">View Project</a></p> -->
+      </div>
+      <a class="project-toggle" href="#">View Details</a>
+
+      <div class="skill-chips" style="margin-top: 18px;">
+        <span class="skill-chip">Scikit-learn</span>
+        <span class="skill-chip">Statistics</span>
+        <span class="skill-chip">Exploratory Data Analysis</span>
+        <span class="skill-chip">Feature Engineering</span>
+      </div>
+
+    </div>
+
+    <div class="project">
+      <h3>Web Application for Automatic Background Removal in Images</h3>
+
+      <div class="project-details">
+        <p><strong>Problem Statement:</strong><br>
+          The challenge at hand was to create a machine learning model capable of automatically removing backgrounds
+          from
+          images. It involves distinguishing the main subject from the background, which can be complex and vary
+          significantly across different images.<br><br>
+
+          <strong>Solution:</strong><br>
+          To tackle this problem, I leveraged a diverse dataset of images containing various subjects and backgrounds.
+          The
+          objective was to develop an efficient model that could accurately identify and isolate the main subject from
+          the
+          background.<br>
+
+          Initially, I explored the use of existing deep learning models, such as Mask R-CNN and U-Net, known for their
+          segmentation capabilities. However, these models often came with computational overhead and larger model
+          sizes.<br>
+
+          To optimize for speed and model size, I devised a custom CNN-based architecture, drawing inspiration from
+          U-Net
+          but tailoring it to the specific task of background removal. The challenge lay in achieving real-time or
+          near-real-time processing while preserving accuracy.<br><br>
+
+          Web Application Development:<br>
+          In addition to the model development, I also created a user-friendly web application using Flask. This web app
+          allowed users to upload their images and receive instant background removal results. It provided a seamless
+          and
+          intuitive interface for individuals and businesses to utilize this powerful image editing capability without
+          the
+          need for extensive technical expertise.<br><br>
+
+          <strong>Impact:</strong><br>
+          The result of this project was a highly efficient model for automatic background removal in images, coupled
+          with
+          a user-friendly web application. It offered real-time or near-real-time performance while effectively removing
+          complex backgrounds.<br><br>
+        </p>
+        <p><a href="https://github.com/G0rav/Automatic_Background_Removal" target="_blank">View Project</a></p>
+      </div>
+      <a class="project-toggle" href="#">View Details</a>
+
+      <div class="skill-chips" style="margin-top: 18px;">
+        <span class="skill-chip">Computer Vision</span>
+        <span class="skill-chip">Image Segmentation</span>
+        <span class="skill-chip">Tensorflow</span>
+        <span class="skill-chip">Flask</span>
+        <span class="skill-chip">HTML, CSS</span>
+      </div>
+
+    </div>
+
+
+  </section>
+
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+
+    <div class="project">
+
+      <div class="skill-chips">
+        <span class="skill-chip">Problem solving</span>
+        <span class="skill-chip">Critical thinking</span>
+        <span class="skill-chip">Project management</span>
+        <span class="skill-chip">Team management</span>
+      </div>
+
+      <div class="skill-chips">
+        <span class="skill-chip">Machine Learning</span>
+        <span class="skill-chip">Data science</span>
+        <span class="skill-chip">Deep Learning</span>
+        <span class="skill-chip">Computer vision</span>
+        <span class="skill-chip">Natural Language Processing (NLP)</span>
+        <span class="skill-chip">Data Analysis</span>
+        <span class="skill-chip">TensorFlow</span>
+        <span class="skill-chip">PyTorch</span>
+        <span class="skill-chip">Statistics</span>
+      </div>
+
+      <div class="skill-chips">
+        <span class="skill-chip">Python</span>
+        <span class="skill-chip">Numpy, Pandas</span>
+        <span class="skill-chip">Scikit-learn</span>
+        <span class="skill-chip">TensorFlow, Keras</span>
+        <span class="skill-chip">Pytorch</span>
+        <span class="skill-chip">SQL</span>
+        <span class="skill-chip">PostgreSQL</span>
+      </div>
+
+      <div class="skill-chips">
+        <span class="skill-chip">AWS</span>
+        <span class="skill-chip">GCP</span>
+      </div>
+
+      <div class="skill-chips">
+        <span style="margin: 5px;">Basics:</span>
+        <span class="skill-chip">Javascript</span>
+        <span class="skill-chip">HTML, CSS</span>
+        <span class="skill-chip">Flask</span>
+        <span class="skill-chip">Django</span>
+        <span class="skill-chip">React</span>
+        <span class="skill-chip">Kotlin</span>
+      </div>
+    </div>
+
+
+  </section>
+
+
+  <!-- Certifications & Awards Section -->
+  <section id="certifications">
+    <h2>Certifications & Awards</h2>
+    <div class="project">
+
+      <div class="work-entry">
+        <h4>Data Science Math Skills</h4>
+        <p class="date">2020</p>
+      </div>
+
+      <div class="work-entry" style="margin-top: -36px;">
+        <h5>Coursera</h5>
+        <p class="date"><a
+            href="https://www.coursera.org/account/accomplishments/verify/9HRBEAEE8SLW?utm_campaign=copybutton_certificate&utm_medium=certificate&utm_source=link"
+            target="_blank" class="view-more">Show
+            Credential</a> </p>
+      </div>
+
+      <div class="work-entry">
+        <h4>Machine Learning Scientist</h4>
+        <p class="date">2020</p>
+      </div>
+
+      <div class="work-entry" style="margin-top: -36px;">
+        <h5>Datacamp</h5>
+        <p class="date"><a
+            href="https://www.datacamp.com/statement-of-accomplishment/track/1d5e50768e76b410843b8a1cc41ab7aa6e8b2caa"
+            target="_blank" class="view-more">Show
+            Credential</a> </p>
+      </div>
+
+
+      <div class="work-entry">
+        <h4>Data Scientist</h4>
+        <p class="date">2020</p>
+      </div>
+
+      <div class="work-entry" style="margin-top: -36px;">
+        <h5>Datacamp</h5>
+        <p class="date"><a
+            href="https://www.datacamp.com/statement-of-accomplishment/track/4cf2ee95f34d52e7605359a85fbf8c90918d9955"
+            target="_blank" class="view-more">Show
+            Credential</a> </p>
+      </div>
+
+      <div class="work-entry">
+        <h4>SQL Server For Database Administrators</h4>
+        <p class="date">2020</p>
+      </div>
+
+      <div class="work-entry" style="margin-top: -36px;">
+        <h5>Datacamp</h5>
+        <p class="date"><a
+            href="https://www.datacamp.com/statement-of-accomplishment/track/d3e4642e997d2e6eb6ad9d46b0d110c0840e749c"
+            target="_blank" class="view-more">Show
+            Credential</a> </p>
+      </div>
+
+      <div class="work-entry">
+        <h4>Advanced Python</h4>
+        <p class="date">2022</p>
+      </div>
+
+      <div class="work-entry" style="margin-top: -36px;">
+        <h5>Cutshort</h5>
+        <p class="date"><a href="https://cutshort.io/certificate/59279" target="_blank" class="view-more">Show
+            Credential</a> </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+
+    <div class="project">
+
+      <!-- Add your contact information, such as email, LinkedIn, and GitHub links. -->
+      <p><strong>Email:</strong> g.jain86078@gmail.com</p>
+      <p style="margin-top: 8px;"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/gaurav2022/"
+          target="_blank">linkedin.com/in/gaurav2022</a></p>
+      <p style="margin-top: 8px;"><strong>GitHub:</strong> <a href="https://github.com/G0rav/"
+          target="_blank">github.com/G0rav</a></p>
+    </div>
+  </section>
+
+  <!-- Resume -->
+  <section id="resume">
+    <h2 style="text-align: center;"><a
+        href="https://drive.google.com/file/d/1roWI3-jXPiCSoRQEcbXgrVyN64ewivJv/view?usp=sharing"
+        target="_blank">Download Resume</a>
+    </h2>
+  </section>
+
+  <button id="back-to-top" title="Back to Top">Back to Top ^</button>
+
+
+  <footer>
+    <!-- <p>&copy; 2023 Gaurav </p> -->
+  </footer>
+
+  <script>
+    // back to top button 
+    document.addEventListener('DOMContentLoaded', function () {
+      var backToTopButton = document.getElementById('back-to-top');
+
+      backToTopButton.addEventListener('click', function () {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+
+      window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 300) {
+          backToTopButton.style.display = 'block';
+        } else {
+          backToTopButton.style.display = 'none';
+        }
+      });
+    });
+
+
+    // accordian 
+    document.addEventListener('DOMContentLoaded', function () {
+      var projectToggles = document.querySelectorAll('.project-toggle');
+
+      projectToggles.forEach(function (toggle) {
+        toggle.addEventListener('click', function (event) {
+          var details = this.parentElement.querySelector('.project-details');
+          if (details.style.display === 'none' || details.style.display === '') {
+            details.style.display = 'block';
+            this.innerText = 'Hide Details';
+          } else {
+            details.style.display = 'none';
+            this.innerText = 'View Details';
+          }
+          event.preventDefault();
+        });
+      });
+    });
+
+  </script>
+
+</body>
+
+</html>
